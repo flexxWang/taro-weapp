@@ -66,6 +66,7 @@
     "@babel/core": "^7.24.4",
     "@babel/plugin-proposal-class-properties": "7.14.5",
     "@babel/preset-react": "^7.24.1",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
     "@tarojs/cli": "4.0.8",
     "@tarojs/service": "4.0.8",
     "@tarojs/vite-runner": "4.0.8",
