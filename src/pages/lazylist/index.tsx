@@ -1,5 +1,5 @@
 import { View, Text, Image } from '@tarojs/components'
-import { useLoad, useReachBottom } from '@tarojs/taro'
+import { useLoad, useReachBottom, navigateTo } from '@tarojs/taro'
 import { useState } from 'react'
 import './index.scss'
 
@@ -63,7 +63,13 @@ export default function LazyList() {
   return (
     <View className='lazy-list'>
       {list.map(item => (
-        <View key={item.id} className='list-item'>
+        <View 
+          key={item.id} 
+          className='list-item' 
+          onClick={() => navigateTo({
+            url: `/pages/detail/index?id=${item.id}`
+          })}
+        >
           <View className='item-header'>
             <Text className='title'>{item.title}</Text>
             <Text className='time'>{item.time}</Text>

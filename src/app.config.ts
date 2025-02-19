@@ -1,9 +1,8 @@
 export default defineAppConfig({
-  pages: ["pages/index/index", "pages/create/index", "pages/mine/index"],
+  pages: ["pages/index/index", "pages/create/index", "pages/mine/index", "pages/lazylist/index", "pages/detail/index"],
   window: {
     backgroundTextStyle: "light",
     navigationBarBackgroundColor: "#000",
-    navigationBarTitleText: "首页",
     navigationBarTextStyle: "white",
   },
   tabBar: {

@@ -1,3 +1,25 @@
+// 添加图标字体
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_2878559_6qtw1wlj7g.woff2') format('woff2');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  color: #666;
+  margin-right: 4px;
+}
+
+.icon-like:before {
+  content: "\e8ab";
+}
+
+.icon-comment:before {
+  content: "\e8c8";
+}
+
 .lazy-list {
   padding: 24px;
   background: #f5f7fa;
@@ -79,27 +101,7 @@
           100% { transform: rotate(360deg); }
         }
         
-        // 添加图标字体
-        @font-face {
-          font-family: 'iconfont';
-          src: url('//at.alicdn.com/t/font_2878559_6qtw1wlj7g.woff2') format('woff2');
-        }
-        
-        .iconfont {
-          font-family: "iconfont" !important;
-          font-size: 20px;
-          font-style: normal;
-          color: #666;
-          margin-right: 4px;
-        }
-        
-        .icon-like:before {
-          content: "\e8ab";
-        }
-        
-        .icon-comment:before {
-          content: "\e8c8";
-        }
+
       }
       
       .content-image {

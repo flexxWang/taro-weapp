@@ -1,5 +1,6 @@
 import { View, Image, Text } from '@tarojs/components'
 import { useState } from 'react'
+import Taro from '@tarojs/taro'
 import './index.scss'
 
 export default function Mine() {
@@ -11,6 +12,12 @@ export default function Mine() {
     following: '12.4w',
     likes: 423
   })
+
+  const handleToList = () => {
+    Taro.navigateTo({
+      url: '/pages/lazylist/index'
+    })
+  }
 
   return (
     <View className='mine'>
@@ -43,6 +50,7 @@ export default function Mine() {
           <Text className='number'>{userInfo.likes}</Text>
           <Text className='label'>点赞</Text>
         </View>
+        <View className='to-list-btn' onClick={handleToList}>前往列表页</View>
       </View>
 
       <View className='tabs'>
